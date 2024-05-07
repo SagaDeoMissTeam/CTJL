@@ -1,0 +1,15 @@
+{
+  "jars" : [
+    {
+      "identifier": {
+        "group": "com.sun.codemodel",
+        "artifact": "codemodel"
+      },
+      "version": {
+        "range": "[2.0,)",
+        "artifactVersion": "2.6"
+      },
+      "path": "META-INF/jars/codemodel-2.6.jar"
+    }
+  ]
+}

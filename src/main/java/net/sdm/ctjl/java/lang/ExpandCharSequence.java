@@ -8,7 +8,7 @@ import org.openzen.zencode.java.ZenCodeType;
 import java.util.stream.IntStream;
 
 @ZenRegister
-@NativeTypeRegistration(value = CharSequence.class, zenCodeName = "mods.ctjl.java.io.CharSequence")
+@NativeTypeRegistration(value = CharSequence.class, zenCodeName = "mods.ctjl.java.lang.CharSequence")
 public class ExpandCharSequence {
 
     @ZenCodeType.Method

@@ -8,7 +8,7 @@ import org.openzen.zencode.java.ZenCodeType;
 import java.io.IOException;
 
 @ZenRegister
-@NativeTypeRegistration(value = Appendable.class, zenCodeName = "mods.ctjl.java.io.Appendable")
+@NativeTypeRegistration(value = Appendable.class, zenCodeName = "mods.ctjl.java.lang.Appendable")
 public class ExpandAppendable {
 
     @ZenCodeType.Method

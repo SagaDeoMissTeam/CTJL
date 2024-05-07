@@ -11,8 +11,8 @@ import java.nio.CharBuffer;
 public class ExpandCharBuffer {
 
     @ZenCodeType.Method
-    @ZenCodeType.Getter("get")
-    public static char get(CharBuffer buffer) {
+    @ZenCodeType.Getter("getChar")
+    public static char getChar(CharBuffer buffer) {
         return buffer.get();
     }
 
@@ -22,27 +22,27 @@ public class ExpandCharBuffer {
     }
 
     @ZenCodeType.Method
-    public static char get(CharBuffer buffer, int index) {
+    public static char getCharget(CharBuffer buffer, int index) {
         return buffer.get(index);
     }
 
     @ZenCodeType.Method
-    public static CharBuffer get(CharBuffer buffer, char[] dsx) {
+    public static CharBuffer getCharget(CharBuffer buffer, char[] dsx) {
         return buffer.get(dsx);
     }
 
     @ZenCodeType.Method
-    public static CharBuffer get(CharBuffer buffer, int index, char[] dsx) {
+    public static CharBuffer getCharget(CharBuffer buffer, int index, char[] dsx) {
         return buffer.get(index, dsx);
     }
 
     @ZenCodeType.Method
-    public static CharBuffer get(CharBuffer buffer, int index, char[] dsx, int length) {
+    public static CharBuffer getChar(CharBuffer buffer, int index, char[] dsx, int length) {
         return buffer.get(dsx, index, length);
     }
 
     @ZenCodeType.Method
-    public static CharBuffer get(CharBuffer buffer, int index, char[] dsx, int offset, int length) {
+    public static CharBuffer getChar(CharBuffer buffer, int index, char[] dsx, int offset, int length) {
         return buffer.get(index, dsx, offset, length);
     }
 

@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "net.sdm.ctjl.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "CTJL.refmap.json",
+  "refmap": "ctjl.refmap.json",
   "mixins": [
   ],
   "client": [

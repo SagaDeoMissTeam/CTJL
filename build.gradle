@@ -9,11 +9,14 @@ buildscript {
     }
 }
 
+
 plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
+jarJar.enable()
+jarJar.fromRuntimeConfiguration()
 
 apply plugin: 'org.spongepowered.mixin'
 
@@ -133,7 +136,12 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven {
+        url "https://maven.blamejared.com"
+    }
 }
+
+
 
 dependencies {
     // Specify the version of Minecraft to use.
@@ -143,6 +151,12 @@ dependencies {
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     implementation fg.deobf("curse.maven:crafttweaker-239197:5210454")
+    implementation 'com.sun.codemodel:codemodel:2.6'
+
+
+
+    //annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors:3.0.0.10'
+    //implementation fg.deobf(group: 'com.sun.codemodel:codemodel', name: 'codemodel', version: '[2.0,3.0)')
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
@@ -201,3 +215,7 @@ tasks.named('jar', Jar).configure {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
+
+//compileJava {
+//    options.compilerArgs << "-Acrafttweaker.processor.document.output_directory=${file('docsOut')}"
+//}
