@@ -15,8 +15,6 @@ plugins {
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
-jarJar.enable()
-jarJar.fromRuntimeConfiguration()
 
 apply plugin: 'org.spongepowered.mixin'
 
